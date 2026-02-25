@@ -1,0 +1,283 @@
+# Create a simple style.css for basic layout and styling
+style_css_content = """
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h2, h3 {
+    color: #2c3e50;
+}
+
+form {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+form input, form textarea, form select, form button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+h3 {
+    color: #2980b9;
+}
+
+/* Cart Table */
+table {
+    width: 100%;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Cart Actions */
+.cart-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-actions a {
+    background-color: #3498db;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.cart-actions a:hover {
+    background-color: #2980b9;
+}
+
+.cart-actions a:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+/* Total Section */
+.total-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.total-section h3 {
+    font-size: 24px;
+    color: #e74c3c;
+}
+
+/* Checkout Button */
+.checkout-btn {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.checkout-btn:hover {
+    background-color: #27ae60;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Navigation Links */
+.nav-links {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nav-links a {
+    margin-right: 15px;
+    font-weight: bold;
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Product Card Styles */
+.product-card {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.product-card p {
+    color: #7f8c8d;
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+/* Rating Display */
+.rating {
+    color: #f39c12;
+    font-weight: bold;
+}
+
+/* Rating Form */
+.rating-form {
+    margin-top: 10px;
+}
+
+.rating-form label {
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.rating-form input {
+    width: 40px;
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.rating-form button {
+    background-color: #3498db;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.rating-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Add to Cart / View Product Links */
+.product-card a {
+    background-color: #3498db;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.product-card a:hover {
+    background-color: #2980b9;
+}
+
+.product-card a:first-child {
+    margin-right: 10px;
+}
+
+/* Login Message */
+p a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
